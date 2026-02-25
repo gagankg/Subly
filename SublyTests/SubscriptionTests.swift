@@ -1,6 +1,6 @@
 import Testing
 import Foundation
-@testable import SubTrack
+@testable import Subly
 
 // MARK: - BillingCycle Tests
 
