@@ -78,7 +78,7 @@ struct SettingsView: View {
             }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Please enable notifications for SubTrack in iOS Settings to receive renewal reminders.")
+            Text("Please enable notifications for Subly in iOS Settings to receive renewal reminders.")
         }
         .task { await refreshPermissionStatus() }
     }

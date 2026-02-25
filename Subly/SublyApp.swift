@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct SubTrackApp: App {
+struct SublyApp: App {
     @AppStorage("notificationsEnabled") private var notificationsEnabled: Bool = true
     @AppStorage("notificationDaysBefore") private var daysBefore: Int = 3
 

@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1A1A84AB2F4FB13300FE4343"
-               BuildableName = "SubTrack.app"
-               BlueprintName = "SubTrack"
-               ReferencedContainer = "container:SubTrack.xcodeproj">
+               BuildableName = "Subly.app"
+               BlueprintName = "Subly"
+               ReferencedContainer = "container:Subly.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB1B84AB2F4FB13300FE4343"
-               BuildableName = "SubTrackTests.xctest"
-               BlueprintName = "SubTrackTests"
-               ReferencedContainer = "container:SubTrack.xcodeproj">
+               BuildableName = "SublyTests.xctest"
+               BlueprintName = "SublyTests"
+               ReferencedContainer = "container:Subly.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,9 +50,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BB1B84AB2F4FB13300FE4343"
-               BuildableName = "SubTrackTests.xctest"
-               BlueprintName = "SubTrackTests"
-               ReferencedContainer = "container:SubTrack.xcodeproj">
+               BuildableName = "SublyTests.xctest"
+               BlueprintName = "SublyTests"
+               ReferencedContainer = "container:Subly.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A1A84AB2F4FB13300FE4343"
-            BuildableName = "SubTrack.app"
-            BlueprintName = "SubTrack"
-            ReferencedContainer = "container:SubTrack.xcodeproj">
+            BuildableName = "Subly.app"
+            BlueprintName = "Subly"
+            ReferencedContainer = "container:Subly.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -89,9 +89,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1A1A84AB2F4FB13300FE4343"
-            BuildableName = "SubTrack.app"
-            BlueprintName = "SubTrack"
-            ReferencedContainer = "container:SubTrack.xcodeproj">
+            BuildableName = "Subly.app"
+            BlueprintName = "Subly"
+            ReferencedContainer = "container:Subly.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
