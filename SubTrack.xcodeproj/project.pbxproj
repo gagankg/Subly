@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		BB1B84D12F4FB13500FE4343 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1A84A42F4FB13300FE4343 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1A84AB2F4FB13300FE4343;
+			remoteInfo = SubTrack;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1A1A84AC2F4FB13300FE4343 /* SubTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1B84AC2F4FB13300FE4343 /* SubTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = SubTrack;
 			sourceTree = "<group>";
 		};
+		BB1B84AE2F4FB13300FE4343 /* SubTrackTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SubTrackTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1A1A84A92F4FB13300FE4343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1B84A92F4FB13300FE4343 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1A84AE2F4FB13300FE4343 /* SubTrack */,
+				BB1B84AE2F4FB13300FE4343 /* SubTrackTests */,
 				1A1A84AD2F4FB13300FE4343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1A84AC2F4FB13300FE4343 /* SubTrack.app */,
+				BB1B84AC2F4FB13300FE4343 /* SubTrackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = 1A1A84AC2F4FB13300FE4343 /* SubTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB1B84AB2F4FB13300FE4343 /* SubTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1B84B92F4FB13500FE4343 /* Build configuration list for PBXNativeTarget "SubTrackTests" */;
+			buildPhases = (
+				BB1B84A82F4FB13300FE4343 /* Sources */,
+				BB1B84A92F4FB13300FE4343 /* Frameworks */,
+				BB1B84AA2F4FB13300FE4343 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1B84D02F4FB13500FE4343 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB1B84AE2F4FB13300FE4343 /* SubTrackTests */,
+			);
+			name = SubTrackTests;
+			packageProductDependencies = (
+			);
+			productName = SubTrackTests;
+			productReference = BB1B84AC2F4FB13300FE4343 /* SubTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					1A1A84AB2F4FB13300FE4343 = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					BB1B84AB2F4FB13300FE4343 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 1A1A84AB2F4FB13300FE4343;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				1A1A84AB2F4FB13300FE4343 /* SubTrack */,
+				BB1B84AB2F4FB13300FE4343 /* SubTrackTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1A1A84AA2F4FB13300FE4343 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1B84AA2F4FB13300FE4343 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB1B84A82F4FB13300FE4343 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1B84D02F4FB13500FE4343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1A84AB2F4FB13300FE4343 /* SubTrack */;
+			targetProxy = BB1B84D12F4FB13500FE4343 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1A1A84B72F4FB13500FE4343 /* Debug */ = {
@@ -306,6 +381,46 @@
 			};
 			name = Release;
 		};
+		BB1B84BA2F4FB13500FE4343 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gagan-Shetty.SubTrackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubTrack";
+			};
+			name = Debug;
+		};
+		BB1B84BB2F4FB13500FE4343 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Gagan-Shetty.SubTrackTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SubTrack";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +438,15 @@
 			buildConfigurations = (
 				1A1A84BA2F4FB13500FE4343 /* Debug */,
 				1A1A84BB2F4FB13500FE4343 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1B84B92F4FB13500FE4343 /* Build configuration list for PBXNativeTarget "SubTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1B84BA2F4FB13500FE4343 /* Debug */,
+				BB1B84BB2F4FB13500FE4343 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
