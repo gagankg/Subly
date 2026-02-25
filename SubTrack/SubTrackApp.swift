@@ -1,21 +1,14 @@
-//
-//  SubTrackApp.swift
-//  SubTrack
-//
-//  Created by Gagan Shetty on 2/25/26.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
 struct SubTrackApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+    @AppStorage("notificationsEnabled") private var notificationsEnabled: Bool = true
+    @AppStorage("notificationDaysBefore") private var daysBefore: Int = 3
 
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([Subscription.self])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
@@ -26,6 +19,18 @@ struct SubTrackApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    // Re-schedule all notifications on every launch
+                    if notificationsEnabled {
+                        let context = sharedModelContainer.mainContext
+                        let descriptor = FetchDescriptor<Subscription>()
+                        let subscriptions = (try? context.fetch(descriptor)) ?? []
+                        NotificationManager.shared.rescheduleAll(
+                            subscriptions: subscriptions,
+                            daysBefore: daysBefore
+                        )
+                    }
+                }
         }
         .modelContainer(sharedModelContainer)
     }
