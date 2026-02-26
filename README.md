@@ -1,6 +1,6 @@
 # Subly
 
-A clean, native iOS app for tracking personal subscriptions — Netflix, Spotify, iCloud, and anything else that bills you regularly.
+A native iOS app for tracking personal subscriptions — Netflix, Spotify, iCloud, and anything else that bills you regularly.
 
 ## Features
 
